@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web App</title>
+
+    <!-- CSS -->
+    <!-- load bootstrap and our own personal stylesheet -->
+    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/superhero/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>NodeJS Express + EJS </h1>
+        <h2>Info</h2>
+        <p><%= message %></p>
+        <h2>Loop through Json Data: </h2>
+        <ul>
+            <% json_object.forEach(function(data) { %>
+            <li><%= data.name %> - <%= data.drunkness %></li>
+            <% }); %>
+        </ul>
+        <div>
+            <a href="http://www.embeddedjs.com/" class="btn btn-primary btn-lg">Visit EJS website</a>
+        </div>
+        <p>by Jeferson Tobias</p>
+    </div>
+</div>
+    
+</body>
+</html>
